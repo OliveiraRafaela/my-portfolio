@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
 
 body, h1, h2, h3, h4, p, ul {
     margin: 0;
@@ -7,20 +7,15 @@ body, h1, h2, h3, h4, p, ul {
     font-size: 1.6rem;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
 
-s a, img {
-    display: block;
-}
+
 
 .wrapper {
-    /*max-width: 1000px;*/
+    /* max-width: 1000px; */
     padding: 0 30px;
 }
 
+/* Header features */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -34,6 +29,7 @@ nav {
 
 .logo p {
     font-size: 4rem;
+    font-weight: 700;
     color: #000;
     padding: 0.5rem 0;
 }
@@ -64,41 +60,63 @@ nav {
 }
 
 .menu a:hover {
-    /*text-decoration: underline;*/
+    text-decoration: underline;
     color: white;
     background-color: #6183AD;
 }
 
+/*  */
+.container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; */
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* Landing part */
 .landing-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-/* .intro-img {
+.intro-img {
+    width: 50%;
+
     background-color: aliceblue;
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .profile-photo {
-    max-width: 500px;
-    padding: 3rem 6rem;
+    max-width: 100%;
+    max-height: 50vh;
+
     margin: 0;
 }
 
 .intro {
-    /* background-color: bisque; */
+    background-color: bisque;
+    width: 50%;
 
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
     align-items: center;
 }
 
 .text-intro {
-    /* background-color: azure; */
+    background-color: azure;
 
     font-size: 3rem;
+    font-weight: 400;
     text-align: center;
-    padding: 10rem;
+    max-width: 50rem;
 }
 
 button {
@@ -112,10 +130,12 @@ button {
     border-radius: 20px;
 }
 
-/* header {
+header {
     background-color: lightcoral;
-} */
+}
 
+/* ------------------------------- */
+/* About features */
 h2 {
     font-size: 2rem;
     margin: 3rem 0;
@@ -123,7 +143,7 @@ h2 {
 }
 
 .about-container {
-    /* background-color: #98c0f1; */
+    background-color: #98c0f1;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,7 +151,7 @@ h2 {
 }
 
 .about-text {
-    /* background-color: rgb(202, 230, 174); */
+    background-color: rgb(202, 230, 174);
     margin: 3rem;
 
     align-items: center;
@@ -139,14 +159,46 @@ h2 {
 }
 
 .about-img {
-    /* background-color: rgb(159, 94, 192); */
+    background-color: rgb(159, 94, 192);
 
     display: flex;
     justify-content: center;
 }
 
+/* ------------------------------- */
+/* Projects features */
+iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 40rem;
+    height: 40rem;
+
+    background-color: cornsilk;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.proj-container {
+    background-color: darkolivegreen;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.proj-content {
+    background-color: blanchedalmond;
+    max-width: 50rem;
+}
+
+/* ------------------------------- */
+/* Contact features */
 .cont-container {
-    /* background-color: burlywood; */
+    background-color: burlywood;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,8 +216,8 @@ h2 {
 }
 
 .cont-text {
-    /* background-color: aquamarine; */
-    
+    background-color: aquamarine;
+
     align-items: center;
     align-self: center;
 
@@ -188,17 +240,49 @@ h2 {
     text-decoration: underline;
 }
 
+/* ------------------------------- */
 
+
+
+
+
+/* Footer features */
 
 footer p {
     padding: 0.2rem 0.5rem;
 }
 
 footer {
-    /* background-color: darkgrey; */
+    background-color: darkgrey;
 
     border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    li {
+        display: block;
+    }
+
+    .intro-img{
+        max-width: 100%;
+    }
+    .intro{
+        max-width: 100%;
+    }
+    .text-intro{
+        max-width: 100%;
+    } 
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
 }

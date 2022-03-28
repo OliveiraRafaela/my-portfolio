@@ -1,7 +1,22 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 10px;
-  }
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a, img {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
