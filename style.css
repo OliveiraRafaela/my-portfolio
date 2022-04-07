@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
 
+/* GENERAL */
 body, h1, h2, h3, h4, p, ul {
     margin: 0;
     color: #000;
@@ -7,282 +8,156 @@ body, h1, h2, h3, h4, p, ul {
     font-size: 1.6rem;
 }
 
-
-
-
-.wrapper {
-    /* max-width: 1000px; */
-    padding: 0 30px;
+a {
+    color: #000;
+    text-decoration: none;
 }
+/* ---------------------------------------------------- */
 
-/* Header features */
-.header-container {
+/* HEADER */
+/* header {
+    background-color: lightpink;
+} */
+nav {
+    margin: 0;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #000;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav {
-    border-bottom: 1px solid black;
-    padding: 1 rem 0;
-}
-
-.logo p {
+.logo {
+    background-color: inherit;
     font-size: 4rem;
     font-weight: 700;
-    color: #000;
-    padding: 0.5rem 0;
-}
-
-.logo {
-    padding-left: 0px;
-    text-decoration: none;
-}
-
-.logo:hover {
-    background-color: inherit;
-}
-
-.menu {
-    display: flex;
-
-}
-
-.hamburger-button {
-    display: none;
 }
 
 .menu a {
-    color: black;
-    text-decoration: none;
-    padding: 2rem 3rem;
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .menu a:hover {
-    text-decoration: underline;
-    color: white;
     background-color: #6183AD;
+    color: #fff;
 }
 
-/*  */
+li {
+    padding: 1rem;
+    display: inline-block;
+
+}
+/* ---------------------------------------------------- */
+
+/* HOME */
 .container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem; */
-
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-/* Landing part */
-.landing-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.intro-img {
-    width: 50%;
 
-    background-color: aliceblue;
+.one {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* background-color: beige; */
 }
 
 .profile-photo {
-    max-width: 100%;
-    max-height: 50vh;
-
-    margin: 0;
+    max-width: 500px;
+    margin: 3rem 0;
+    border-radius: 20px;
 }
 
-.intro {
-    background-color: bisque;
-    width: 50%;
-
+.two {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+
     justify-content: center;
     align-items: center;
+
+    /* background-color: aqua; */
 }
 
 .text-intro {
-    background-color: azure;
+    font-size: 5rem;
+    max-width: 40rem;
 
-    font-size: 3rem;
-    font-weight: 400;
     text-align: center;
-    max-width: 50rem;
+
+    /* background-color: blueviolet; */
+    margin-bottom: 3rem;
 }
 
-button {
+
+.btn {
     background-color: #6183AD;
-    color: white;
+    
     font-family: inherit;
     font-size: 2rem;
 
     border: 0;
     padding: 2rem 2.5rem;
     border-radius: 20px;
+    margin: 0;
 }
 
-header {
-    background-color: lightcoral;
+.btn a{
+    color: white;
 }
+/* ---------------------------------------------------- */
 
-/* ------------------------------- */
-/* About features */
+/* ABOUT */
+
 h2 {
     font-size: 2rem;
-    margin: 3rem 0;
-    padding: 0 3rem;
-}
-
-.about-container {
-    background-color: #98c0f1;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    font-weight: 700;
+    padding: 3rem 2rem;
 }
 
 .about-text {
-    background-color: rgb(202, 230, 174);
-    margin: 3rem;
-
-    align-items: center;
-    align-self: center;
+    padding-left: 2rem;
+    font-size: 2rem;
 }
+/* ---------------------------------------------------- */
 
-.about-img {
-    background-color: rgb(159, 94, 192);
+/* PROJECT */
+.ph-project {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #6183AD;
 
     display: flex;
     justify-content: center;
-}
-
-/* ------------------------------- */
-/* Projects features */
-iframe {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 40rem;
-    height: 40rem;
-
-    background-color: cornsilk;
-}
-
-.proj {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
-.proj-container {
-    background-color: darkolivegreen;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+.ph-project h3{
+    color: #fff;
 }
 
-.proj-content {
-    background-color: blanchedalmond;
-    max-width: 50rem;
+/* ---------------------------------------------------- */
+
+/* CONTACT */
+h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 3rem 2rem;
 }
-
-/* ------------------------------- */
-/* Contact features */
-.cont-container {
-    background-color: burlywood;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+address {
+    margin-top: 3rem;
 }
+/* ---------------------------------------------------- */
 
-.cont-img {
-    display: flex;
-    justify-content: center;
-}
-
-.cont-text h3 {
-    font-size: 4rem;
-    padding: 3rem 0;
-}
-
-.cont-text {
-    background-color: aquamarine;
-
-    align-items: center;
-    align-self: center;
-
-    margin: 0 3rem;
-}
-
-.contact-list img {
-    display: inline;
-}
-
-.contact-list a {
-    color: black;
-    font-style: normal;
-    text-decoration: none;
-    padding: 2rem 3rem;
-    transition: all 0.5s ease-in;
-}
-
-.contact-list a:hover {
-    text-decoration: underline;
-}
-
-/* ------------------------------- */
-
-
-
-
-
-/* Footer features */
-
-footer p {
-    padding: 0.2rem 0.5rem;
-}
-
+/* Footer */
 footer {
-    background-color: darkgrey;
-
-    border-top: 1px solid black;
+    border-top: 2px solid #000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
 }
-
-@media (max-width: 768px) {
-
-    li {
-        display: block;
-    }
-
-    .intro-img{
-        max-width: 100%;
-    }
-    .intro{
-        max-width: 100%;
-    }
-    .text-intro{
-        max-width: 100%;
-    } 
-
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-
-}
+/* ---------------------------------------------------- */
