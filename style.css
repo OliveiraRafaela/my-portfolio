@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;900&display=swap');
 
 /* GENERAL */
-body, h1, h2, h3, h4, p, ul {
+body, h1, h2, h3, h4, p{
     margin: 0;
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -14,41 +14,6 @@ a {
 }
 /* ---------------------------------------------------- */
 
-/* HEADER */
-/* header {
-    background-color: lightpink;
-} */
-nav {
-    margin: 0;
-    padding: 1rem 2rem;
-    border-bottom: 2px solid #000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    background-color: inherit;
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.menu a {
-    transition: all 0.4s ease-in;
-}
-
-.menu a:hover {
-    background-color: #6183AD;
-    color: #fff;
-}
-
-li {
-    padding: 1rem;
-    display: inline-block;
-
-}
-/* ---------------------------------------------------- */
 
 /* HOME */
 .container {
@@ -224,8 +189,5 @@ footer {
     }
     .box{
         font-size: 5rem;
-    }
-    .menu{
-        display: none;
     }
 }

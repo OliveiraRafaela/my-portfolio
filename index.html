@@ -6,36 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rafaela Oliveira Webpage">
     <title>Rafaela Oliveira</title>
-    <script src="https://kit.fontawesome.com/29f187f06a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./reset.css">    
-    <link rel="stylesheet" href="./style.css">
 
+    <script src="https://kit.fontawesome.com/29f187f06a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header id="home">
-        <nav>
-            <a href="#home">
-                <p class="logo">Rafaela Oliveira</p>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">
+                    <p>Rafaela Oliveira</p>
+                </a>
+            </div>
+            <a href="#" class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
+            <div class="menu">
+                <ul id="menu-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <nav class=hamburger-menu>
-            <a class=hamburger href=#>&#9776;</a>
-            <aside>
-               <ul>
-                  <li><a href=.>Home</a></li>
-                  <li><a href=page1.html>Page 1</a></li>
-                  <li><a href=page2.html>Page 2</a></li>
-                  <li><a href=page3.html>Page 3</a></li>
-               </ul>
-            </aside>
-         </nav>
         <div class="container">
             <div class="one"><img class="profile-photo" src="./img/profile_photo.jpg" alt="a profile photo"></div>
             <div class="two">
@@ -74,7 +73,7 @@
                 <p>I believe in wold with equality, accessibility and diversity, and I want to make part of this
                     transformation, improving how we interact with the world.</p>
                 <br>
-                
+
             </div>
             <div class="one resume">
                 <img src="./img/resume_thumbnail.png" alt="second profile photo">
@@ -102,7 +101,7 @@
     <section id="contact">
         <h2>CONTACT</h2>
         <div class="container">
-            
+
             <div class="two">
                 <h3>Don't get shy,<br>send me a <b>message</b>.</h3>
                 <address class="contact-list">
