@@ -140,8 +140,8 @@ h2 {
 }
 
 .prototype {
-    width: 40rem;
-    height: 40rem;
+    width: 60rem;
+    height: 60rem;
 }
 
 .proj-img {
@@ -268,7 +268,10 @@ footer {
     .profile-photo {
         max-width: 300px;
     }
-
+    .prototype {
+        width: 30rem;
+        height: 30rem;
+    }
     .collection {
         padding-left: 3rem;
         
@@ -282,5 +285,11 @@ footer {
 
     .box {
         font-size: 5rem;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 }
