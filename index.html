@@ -8,10 +8,11 @@
     <title>Rafaela Oliveira</title>
 
     <script src="https://kit.fontawesome.com/29f187f06a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -27,8 +28,8 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </a>
-            <div class="menu">
-                <ul id="menu-links">
+            <div class="menu" id="menu">
+                <ul class="menu-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -83,25 +84,53 @@
     </section>
     <section id="projects">
         <h2>PROJECTS</h2>
-        <div class="container">
-            <div class="one">
-                <div class="ph-project">
-                    <h3>Design</h3>
+        <div class="collection">
+            <div class="project">
+                <h3>Portfolio</h3>
+                <div class="proj-img">
+                    <img src="./img/portfolio.png" alt="">
+                </div>
+                <div class="proj-text">
+                    <p>Yes, this very website indeed!</p><br>
+                    <p>Please, feel free to visit this project <a href="#" class="repo-link">repository on github</a>.
+                    </p><br>
+                    <p>Focus: Coding | Technology: HTML, CSS, Javascript</p>
                 </div>
             </div>
-            <div class="two">
-                <div class="ph-project">
-                    <h3>Coding</h3>
+
+            <div class="project">
+                <h3>Photolab</h3>
+                <div class="proj-img">
+                    <img src="./img/photolab.png" alt="">
+                </div>
+                <div class="proj-text">
+                    <p>Guess what? I'm also a photographer, and I made this a opportunity to training my developer
+                        skills.</p><br>
+                    <p>Please, feel free to visit this project <a href="#" class="repo-link">repository on github</a>.
+                    </p><br>
+                    <p>Focus: Coding | Technology: HTML, CSS, Javascript</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Where do you want to go?</h3>
+                <div class="prototype-img">
+                    <iframe class="prototype"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FX2ODf9AsVWhiztFzXWhnRL%2FFuture%3Fnode-id%3D103%253A148%26scaling%3Dscale-down%26page-id%3D103%253A147%26starting-point-node-id%3D103%253A148"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="proj-text">
+                    <p>In this design exercise, I imagine an app that answers me if my destiny requires or not a
+                        visa.</p><br>
+                    <p>The main goal of this project is to practice wireframes creation.</p> <br>
+                    <p>Focus: Design | Technology: Figma</p>
                 </div>
             </div>
         </div>
-
-
     </section>
     <section id="contact">
         <h2>CONTACT</h2>
         <div class="container">
-
             <div class="two">
                 <h3>Don't get shy,<br>send me a <b>message</b>.</h3>
                 <address class="contact-list">
@@ -121,7 +150,7 @@
         </address>
     </section>
     <footer>
-        <p class="">&copy; &nbsp;2022&nbsp;Rafaela Oliveira</p>
+        <p><i class="fa-solid fa-copyright"></i> <span id="footer">xxx</span> </p>
         <p>Toronto, Canada</p>
     </footer>
 </body>

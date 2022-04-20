@@ -5,7 +5,7 @@ https://www.npmjs.com/package/hamburger-menu
 .navbar {
     margin: 0;
     padding: 1rem 2rem;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #36454F;
     max-width: 100%;
 
     display: flex;
@@ -19,24 +19,26 @@ https://www.npmjs.com/package/hamburger-menu
     font-weight: 700;
 }
 
-.menu ul {
+.menu-links {
     margin: 0;
     padding: 0;
 
     display: flex;
 }
 
-.menu li {
+.menu-links li {
     list-style: none;
+    display: block;
 }
 
-.menu a {
+.menu-links a {
     padding: 1rem;
     transition: all 0.4s ease-in;
 }
 
-.menu a:hover {
- text-decoration: underline;
+.menu-links a:hover {
+    background-color: #6183AD;
+    color: #FFF;
 }
 
 .hamburger {
@@ -56,7 +58,7 @@ https://www.npmjs.com/package/hamburger-menu
 .hamburger .bar {
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: #36454F;
 }
 
 @media (max-width: 768px) {
@@ -65,16 +67,15 @@ https://www.npmjs.com/package/hamburger-menu
         display: flex;
     }
 
-    
+
     .menu {
-       display: none;
-       
+        display: none;
     }
 
     .menu:active {
-        display: flex;
-        width: 100%;
+        display: flex;        
     }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -82,19 +83,21 @@ https://www.npmjs.com/package/hamburger-menu
         width: 100%;
     }
 
-    .menu ul {
-        flex-direction: column;       
-        width: 100%;      
-        background: rgba(97, 131, 173,1)
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: rgba(97, 131, 173, 1)
     }
 
-    .menu li {
+    .menu-links li {
         margin: 1rem 0;
-        font-size: 2rem;                 
+        font-size: 2rem;
         align-self: center;
+        width: 100%;
     }
 
-    .menu a{
+    .menu-links a {
         color: #FFF;
     }
 }

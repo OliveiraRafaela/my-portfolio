@@ -1,21 +1,22 @@
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#menu-links');
+// Function to format the footer message. 
+function setFooterMsg() {
+  let now = new Date;  
+  const footerMsg = ' '+now.getFullYear()+ ' Rafaela Oliveira';
+  document.getElementById('footer').textContent = footerMsg;
+  }
 
-// hamburger.addEventListener("click", () => {
-//   hamburger.classList.toggle("active");
-//   navMenu.classList.toggle("active");
-// });
-
-// document.querySelectorAll(".nav-link").forEach((n) =>
-//   n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active");
-//   })
-// );
+ setFooterMsg();
 
 
-hamburger.addEventListener('click', () => {
-    console.log(hamburger);
-    console.log(navMenu);
-    navMenu.classList.toggle('active');
-})
+/***********************************************************/
+// Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {  
+  navMenu.classList.toggle('active');
+  console.log(navMenu);
+});
+
+
+

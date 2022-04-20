@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;900&display=swap');
 
 /* GENERAL */
-body, h1, h2, h3, h4, p{
+body, h1, h2, h3, h4, p {
     margin: 0;
-    color: #000;
+    color: #36454F;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 a {
-    color: #000;
+    color: #36454F;
     text-decoration: none;
 }
+
 /* ---------------------------------------------------- */
 
 
@@ -27,8 +28,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* background-color: beige; */
 }
 
 .profile-photo {
@@ -48,20 +47,18 @@ a {
 
 .text-intro {
     font-size: 5rem;
-    max-width: 40rem;
+    max-width: 50rem;
 
     text-align: center;
-
-    /* background-color: blueviolet; */
     margin-bottom: 3rem;
 }
 
 
 .btn {
     background-color: #6183AD;
-    
+
     font-family: inherit;
-    font-size: 2rem;
+    font-size: inherit;
 
     border: 0;
     padding: 2rem 2.5rem;
@@ -69,32 +66,35 @@ a {
     margin: 0;
 }
 
-.btn a{
+.btn a {
     color: white;
 }
+
 /* ---------------------------------------------------- */
 
 /* ABOUT */
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     padding: 3rem 2rem;
 }
 
 .about-text {
     padding-left: 2rem;
-    font-size: 2rem;
 }
 
-.resume a{
+.resume a {
     margin-top: 0.5rem;
+    padding: 1rem 0;
     transition: all 0.4s ease-in;
 }
+
 .resume a:hover {
     background-color: #6183AD;
     color: #fff;
 }
+
 /* ---------------------------------------------------- */
 
 /* PROJECT */
@@ -109,7 +109,71 @@ h2 {
     align-items: center;
 }
 
-.ph-project h3{
+.ph-project h3 {
+    color: #fff;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.project {
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project h3 {
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    align-self: start;
+    font-size: 3rem;
+    border-left: 1px solid #36454F;
+}
+
+.prototype {
+    width: 40rem;
+    height: 40rem;
+}
+
+.proj-img {
+    max-width: 600px;
+    border: 1px solid #36454F;
+}
+
+.proj-text {
+    background-color: #6183AD;
+
+    text-align: center;
+
+    border: 0;
+    max-width: 600px;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+
+}
+
+.proj-text p {
+    color: #fff;
+}
+
+.repo-link {
+    color: #fff;
+    display: inline;
+    transition: all 0.4s ease-in;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+    font-style: bold;
     color: #fff;
 }
 
@@ -121,9 +185,21 @@ h3 {
     font-weight: 900;
     padding: 3rem 2rem;
 }
+
 address {
     margin-top: 3rem;
 }
+
+address a {
+    padding: 0.5rem;
+    transition: all 0.4s ease-in;
+}
+
+address a:hover {
+    background-color: #6183AD;
+    color: #FFF;
+}
+
 /* ---------------------------------------------------- */
 
 
@@ -135,40 +211,44 @@ address {
     text-align: center;
 
     margin: 2rem 0;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .ani {
+}
+
+.ani {
     animation: bg-change ease 5s infinite;
-  }
-  
-  @keyframes bg-change {
+}
+
+@keyframes bg-change {
     0% {
-      color: rgba(97, 131, 173, 1);
+        color: rgba(54, 69, 79, 1);
     }
+
     25% {
-      color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
     }
+
     50% {
-      color: rgba(97, 131, 173, 1);
+        color: rgba(54, 69, 79, 1);
     }
+
     75% {
-      color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
     }
+
     100% {
-      color: rgba(97, 131, 173, 1);
+        ccolor: rgba(54, 69, 79, 1);
     }
-  }
-  
+}
+
 
 
 
 /* Footer */
 footer {
-    border-top: 2px solid #000;
+    border-top: 2px solid #36454F;
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -178,16 +258,29 @@ footer {
 
 
 /* ---------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .container {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    .profile-photo{
+
+    .profile-photo {
         max-width: 300px;
     }
-    .box{
+
+    .collection {
+        padding-left: 3rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        gap: 2rem;
+    }
+
+    .box {
         font-size: 5rem;
     }
 }
