@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;900&display=swap');
 
 /* GENERAL */
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+body{
+    max-width: 1500px;
+    background-color: #fff;
+}
+
 body, h1, h2, h3, h4, p {
     margin: 0;
     color: #36454F;
@@ -57,7 +69,7 @@ a {
 .btn {
     background-color: #6183AD;
 
-    font-family: inherit;
+    font-family: 1.6rems;
     font-size: inherit;
 
     border: 0;
@@ -84,14 +96,20 @@ h2 {
     padding-left: 2rem;
 }
 
-.resume a {
-    margin-top: 0.5rem;
-    padding: 1rem 0;
-    transition: all 0.4s ease-in;
+.download{
+    background-color: #6183AD;
+
+    font-family: 1.6rem;
+    font-size: inherit;
+
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 1rem;
 }
 
-.resume a:hover {
-    background-color: #6183AD;
+.download a {
     color: #fff;
 }
 
@@ -122,7 +140,10 @@ h2 {
 }
 
 .project {
+/* background-color: aquamarine; */
+
     margin: 1rem;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -139,14 +160,13 @@ h2 {
     border-left: 1px solid #36454F;
 }
 
-.prototype {
-    width: 60rem;
-    height: 60rem;
-}
-
 .proj-img {
     max-width: 600px;
+    max-height: 400px;   
     border: 1px solid #36454F;
+
+    display: flex;
+    justify-content: center;
 }
 
 .proj-text {
@@ -268,12 +288,9 @@ footer {
     .profile-photo {
         max-width: 300px;
     }
-    .prototype {
-        width: 30rem;
-        height: 30rem;
-    }
+    
     .collection {
-        padding-left: 3rem;
+        padding:1rem;
         
         display: flex;
         flex-direction: column;

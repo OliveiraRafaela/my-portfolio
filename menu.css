@@ -3,6 +3,7 @@ https://www.npmjs.com/package/hamburger-menu
 */
 
 .navbar {
+    position: relative;
     margin: 0;
     padding: 1rem 2rem;
     border-bottom: 2px solid #36454F;
@@ -32,8 +33,8 @@ https://www.npmjs.com/package/hamburger-menu
 }
 
 .menu-links a {
-    padding: 1rem;
-    transition: all 0.4s ease-in;
+    padding: 2rem;
+    transition: all 0.3s ease-in;
 }
 
 .menu-links a:hover {
@@ -69,11 +70,18 @@ https://www.npmjs.com/package/hamburger-menu
 
 
     .menu {
-        display: none;
+        width: 90%;
+
+        display: block;
+        position: absolute;
+        top: 66px;
+        transform: translateX(1000px);
     }
 
-    .menu:active {
-        display: flex;        
+    .menu.active {
+        transform: translateX(0);
+        transition: transform 0.4s;
+        
     }
 
     .navbar {
@@ -87,7 +95,9 @@ https://www.npmjs.com/package/hamburger-menu
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background: rgba(97, 131, 173, 1)
+        background-color: rgba(54, 69, 79, 0.6);
+
+        text-align: center;
     }
 
     .menu-links li {
@@ -98,6 +108,8 @@ https://www.npmjs.com/package/hamburger-menu
     }
 
     .menu-links a {
+        font-family: inherit;
+        font-size: inherit;
         color: #FFF;
     }
 }
