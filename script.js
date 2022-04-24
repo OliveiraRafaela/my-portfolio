@@ -6,9 +6,7 @@ function setFooterMsg() {
   }
 
  setFooterMsg();
-
-
-/***********************************************************/
+ 
 // Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('menu');
